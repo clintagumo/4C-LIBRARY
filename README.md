@@ -49,7 +49,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ## 1. Register a New User (Create)
 - Method: POST
-- Endpoint: [/api/register](https://127.0.0.1/library2/public/user/register)
+- Endpoint: (https://127.0.0.1/library2/public/user/register)
   
 - Request Body:
 
@@ -66,7 +66,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ## 2. Authenticate a User (Read)
 - Method: POST
-- Endpoint: [/api/authenticate](https://127.0.0.1/library2/public/user/auth)
+- Endpoint: (https://127.0.0.1/library2/public/user/auth)
 - Request Body:
 
 {
@@ -84,7 +84,7 @@ json
 }
 
 - Method: POST
-- Endpoint: /api/authenticate
+- Endpoint: (https://127.0.0.1/library2/public/user/auth)
 - Request Body:
 {
     "username": "clint",
@@ -98,7 +98,7 @@ json
 }
 ## 3. Create an Author (Create)
 - Method: POST
-- Endpoint: [/api/authors](https://127.0.0.1/library2/public/authors)
+- Endpoint:(https://127.0.0.1/library2/public/authors)
 - Request Body:
 {
     "name": "clintcute",
@@ -112,7 +112,7 @@ json
 } 
 ## 4. Get All Authors (Read)
 - Method: GET
-- Endpoint: [/api/authors](https://127.0.0.1/library2/public/authors/get)
+- Endpoint: (https://127.0.0.1/library2/public/authors/get)
 - Request Body:
 {
     "userid": 110,
@@ -132,7 +132,7 @@ json
 
 ## 5. Update an Author (Update)
 - Method: PUT
-- Endpoint: [/api/authors/{author_id}](https://127.0.0.1/library2/public/authors/update/2)
+- Endpoint: (https://127.0.0.1/library2/public/authors/update/2)
 - Request Body:
 {
     "name": "Clint Cute",
@@ -146,7 +146,7 @@ json
 
 ## 6. Delete an Author (Delete)
 - Method: DELETE
-- Endpoint: [/api/authors/{author_id}](https://127.0.0.1/library2/public/authors/delete/3)
+- Endpoint:(https://127.0.0.1/library2/public/authors/delete/3)
 - Request Body:
 {
     "userid": 110,
@@ -159,7 +159,7 @@ json
 
 ## 7. Create A Book (Create)
 - Method: POST
-- Endpoint: [/api/books](https://127.0.0.1/library2/public/books)
+- Endpoint: (https://127.0.0.1/library2/public/books)
 - Request Body:
 {
     "title": "The Vampire",
@@ -175,7 +175,7 @@ json
 
 ## 8. Get All Books (Read)
 - Method: GET
-- Endpoint: [/api/books](https://127.0.0.1/library2/public/books/get)
+- Endpoint:(https://127.0.0.1/library2/public/books/get)
 - Request Body:
 {
     "userid": 110,
@@ -197,7 +197,7 @@ json
 
 ## 9.Update A Book (Update)
 - Method: PUT
-- Endpoint: [/api/books](https://127.0.0.1/library2/public/books/update/5)
+- Endpoint: (https://127.0.0.1/library2/public/books/update/5)
 - Request Body:
 {
     "title": "Disney",
@@ -212,7 +212,7 @@ json
 
 ## 10. Delete A Book (Delete)
 - Method: DELETE
-- Endpoint: [/api/books/{book_id}](https://127.0.0.1/library2/public/books/delete/3)
+- Endpoint:(https://127.0.0.1/library2/public/books/delete/3)
 - Request Body:
 {
     "userid": 110,
@@ -225,7 +225,7 @@ json
 
 ## 11. Create Book-Authors Relations (Create)
 - Method: POST
-- Endpoint: [/api/book-author-relations](https://127.0.0.1/library2/public/books_authors)
+- Endpoint: (https://127.0.0.1/library2/public/books_authors)
 - Request Body:
 {
     "book_id": 1,
@@ -240,7 +240,7 @@ json
 
 ## 12. Get All Book Relations (Read)
 - Method: GET
-- Endpoint: [/api/book-author-relations](https://127.0.0.1/library2/public/books_authors/get)
+- Endpoint: (https://127.0.0.1/library2/public/books_authors/get)
 - Request Body:
 {
     "userid": 110,
@@ -262,7 +262,7 @@ json
 
 ## 13. Delete Book-Author Relations (Delete)
 - Method: DELETE
-- Endpoint: [/api/book-author-relations/{relation_id}](https://127.0.0.1/library2/public/books_authors/delete/1)
+- Endpoint: (https://127.0.0.1/library2/public/books_authors/delete/1)
 - Request Body:
 {
     "userid": 110,
