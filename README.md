@@ -59,14 +59,11 @@ CRUD represents the fundamental operations required for persistent storage in an
 "password": "password"
 }
 ‘’’
-
 - Response:
-‘’’ bash
 {
   "status": "success",
   "data": null
 }
-‘’’
 
 ## 2. Authenticate a User (Read)
 - Method: POST
