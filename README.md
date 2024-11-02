@@ -71,11 +71,11 @@ CRUD represents the fundamental operations required for persistent storage in an
 - Request Body:
 
 {
-‘’’ bash
+json
     "username": "clint",
     "password": "password123"
 }
-‘’’
+
 - Response:
 {
   "status": "fail",
