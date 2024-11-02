@@ -52,10 +52,11 @@ CRUD represents the fundamental operations required for persistent storage in an
 - Endpoint: [/api/register](https://127.0.0.1/library2/public/user/register)
   
 - Request Body:
+
 ‘’’ bash
 {
-“username”: “new clint”,
-“password”: “password”
+"username": "clint",
+"password": "password"
 }
 ‘’’
 
