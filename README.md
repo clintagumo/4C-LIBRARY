@@ -55,8 +55,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ‘’’ bash
 {
-"username": "clint",
-"password": "password"
+“username”: “new user”,
+“password”: “password”
 }
 ‘’’
 - Response:
