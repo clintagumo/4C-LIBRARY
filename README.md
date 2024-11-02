@@ -1,3 +1,9 @@
+# API Documentation for User and Author Management System
+
+This documentation provides a detailed guide on how to interact with the **User and Author Management System API**. The system is designed to handle operations such as user registration, authentication, and the management of authors and books, including the creation and maintenance of book-author relationships. The API accepts JSON-formatted input and requires user authentication via tokens to ensure secure interactions.
+
+Each section below outlines the structure of the JSON request payloads for different operations, making it easy for developers to understand and implement these endpoints in their applications.
+
 ## Introduction
 
 Access tokens are essential for secure authentication and authorization in web applications, allowing users to perform operations on APIs without exposing sensitive credentials. These tokens are generated upon successful login and must be included in subsequent API requests to prove the user's identity and permissions. This API documentation outlines how to use access tokens for secure interactions with the User and Author Management System, enabling operations such as creating, reading, updating, and deleting resources. Proper handling of access tokens ensures data security and protects user information during API communications.
@@ -42,7 +48,6 @@ CRUD represents the fundamental operations required for persistent storage in an
 ## Endpoints
 
 ## 1. Register a New User (Create)
-```json
 - Method: POST
 - Endpoint: [/api/register](https://127.0.0.1/library2/public/user/register)
   
@@ -54,19 +59,23 @@ CRUD represents the fundamental operations required for persistent storage in an
 }
 ‘’’
 - Response:
+‘’’ bash
 {
   "status": "success",
   "data": null
 }
-
+‘’’
 ## 2. Authenticate a User (Read)
 - Method: POST
 - Endpoint: [/api/authenticate](https://127.0.0.1/library2/public/user/auth)
 - Request Body:
+
 {
+‘’’ bash
     "username": "clint",
     "password": "password123"
 }
+‘’’
 - Response:
 {
   "status": "fail",
