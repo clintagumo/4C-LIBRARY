@@ -58,6 +58,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 “password”: “password”
 }
 ‘’’
+
 - Response:
 ‘’’ bash
 {
@@ -65,6 +66,7 @@ CRUD represents the fundamental operations required for persistent storage in an
   "data": null
 }
 ‘’’
+
 ## 2. Authenticate a User (Read)
 - Method: POST
 - Endpoint: [/api/authenticate](https://127.0.0.1/library2/public/user/auth)
