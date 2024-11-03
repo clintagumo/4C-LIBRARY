@@ -99,36 +99,49 @@ CRUD represents the fundamental operations required for persistent storage in an
 }
 ```
 - Response:
+
 ```json
 {
-  "status": "success",
-  "Access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY2NjYsImV4cCI6MTczMDI1ODY2NiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.9o830kVZ8iSxAYCgxDu_G7D_K5IXaBlKjBEvRR90mi8"
-  "data": null
+    "status": "success",
+    "Access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY2NjYsImV4cCI6MTczMDI1ODY2NiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.
+     9o830kVZ8iSxAYCgxDu_G7D_K5IXaBlKjBEvRR90mi8"
+    "data": null
 }
 ```
 ## 3. Create an Author (Create)
 - Method: POST
 - Endpoint:(https://127.0.0.1/library2/public/authors)
 - Request Body:
+
+```json
 {
     "name": "clintcute",
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MT
+     cyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
+```
 - Response:
+```json
 {
     "message": "Author created successfully.",
     "author_id": 1
-} 
+}                                                                                                                                   
+```
 ## 4. Get All Authors (Read)
 - Method: GET
 - Endpoint: (https://127.0.0.1/library2/public/authors/get)
 - Request Body:
+
+```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
-} 
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+}
+``` 
 - Response:
+
+```json
 [
   {
     "author_id": 1,
@@ -139,59 +152,80 @@ CRUD represents the fundamental operations required for persistent storage in an
     "name": "Cha Nudas"
   }
 ]
+``` 
 
 ## 5. Update an Author (Update)
 - Method: PUT
 - Endpoint: (https://127.0.0.1/library2/public/authors/update/2)
 - Request Body:
+
+```json
 {
     "name": "Clint Cute",
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
+``` 
 - Response:
+
+```json
 {
     "message": "Author updated successfully."
 }
-
+``` 
 ## 6. Delete an Author (Delete)
 - Method: DELETE
 - Endpoint:(https://127.0.0.1/library2/public/authors/delete/3)
 - Request Body:
+
+```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
+``` 
 - Response:
+
+```json
 {
     "message": "Author deleted successfully."
 }
-
+```
 ## 7. Create A Book (Create)
 - Method: POST
 - Endpoint: (https://127.0.0.1/library2/public/books)
 - Request Body:
+
+```json
 {
     "title": "The Vampire",
     "author_id": 1,
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
+```
 - Response:
+
+```json
 {
     "message": "Book created successfully.",
     "book_id": 1
 }
-
+```
 ## 8. Get All Books (Read)
 - Method: GET
 - Endpoint:(https://127.0.0.1/library2/public/books/get)
 - Request Body:
+
+```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
+```
 - Response:
+
+```json
 [
   {
     "book_id": 1,
@@ -204,59 +238,80 @@ CRUD represents the fundamental operations required for persistent storage in an
     "author_id": 2
   }
 ]
+```
 
 ## 9.Update A Book (Update)
 - Method: PUT
 - Endpoint: (https://127.0.0.1/library2/public/books/update/5)
 - Request Body:
+
+```json
 {
     "title": "Disney",
     "author_id": 1,
     "userid": 1,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
+```
 - Response:
+
+```json
 {
     "message": "Book updated successfully."
 }
-
+```
 ## 10. Delete A Book (Delete)
 - Method: DELETE
 - Endpoint:(https://127.0.0.1/library2/public/books/delete/3)
 - Request Body:
+
+```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-ogggW9edwY5WqfoQLu3C5XXqg"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-        ogggW9edwY5WqfoQLu3C5XXqg"
 }
+```
 - Response:
+
+```json
 {
     "message": "Book deleted successfully."
 }
-
+```
 ## 11. Create Book-Authors Relations (Create)
 - Method: POST
 - Endpoint: (https://127.0.0.1/library2/public/books_authors)
 - Request Body:
+
+```json
 {
     "book_id": 1,
     "author_id": 1,
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-ogggW9edwY5WqfoQLu3C5XXqg"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-        ogggW9edwY5WqfoQLu3C5XXqg"
 }
+```
 - Response:
+
+```json
 {
     "message": "Book-author relation created successfully."
 }
-
+```
 ## 12. Get All Book Relations (Read)
 - Method: GET
 - Endpoint: (https://127.0.0.1/library2/public/books_authors/get)
 - Request Body:
+
+```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-ogggW9edwY5WqfoQLu3C5XXqg"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-        ogggW9edwY5WqfoQLu3C5XXqg"
 }
+```
 - Response:
+
+```json
 [
     {
         "relation_id": 1,
@@ -269,20 +324,28 @@ CRUD represents the fundamental operations required for persistent storage in an
         "author_id": 2
     }
 ]
-
+```
 ## 13. Delete Book-Author Relations (Delete)
 - Method: DELETE
 - Endpoint: (https://127.0.0.1/library2/public/books_authors/delete/1)
 - Request Body:
+
+```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-ogggW9edwY5WqfoQLu3C5XXqg"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY5NjIsImV4cCI6MTcyNzY3MDU2MiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.UN8mB6zOCvzM5y9JI-        ogggW9edwY5WqfoQLu3C5XXqg"
 }
+```
 - Response:
+
+```json
 {
     "message": "Book-author relation deleted successfully."
 }
+```
 
 # Author 
+```json
 Clint Darryn B. Agumo
+```
 
