@@ -6,34 +6,35 @@ Each section below outlines the structure of the JSON request payloads for diffe
 
 ## Introduction to the API Library 
 
-### Purpose: 
+#### Purpose: 
 -   This API Library is designed specifically for library administrators, allowing efficient management of books and user monitoring.
   
-### Core Functions:
+#### Core Functions:
 
 - Add, update, and delete book records.
 - Monitor and manage library user activities.
 
-### Authentication:
+#### Authentication:
 - Supports various authentication methods such as :
 ##### API Keys:
 -      Simple token-based method for access.
-### OAuth: 
+##### OAuth: 
 -      More secure, token-based authentication for resource access.
-### Basic Auth:
+##### Basic Auth:
 -      Username and password-based authentication.
-### Error Handling:
+
+#### Error Handling:
 -      Detailed error codes and structured response formats are provided for common error scenarios to assist in troubleshooting and improving user experience.
 
-### - Access Tokens:
+### Access Tokens:
 - Essential for secure authentication and authorization.
 - Tokens are generated upon successful login and must be included in subsequent API calls.
 - Allow API users to perform operations without exposing sensitive credentials, ensuring data security.
 
-### - Security Emphasis:
+#### Security Emphasis:
 - Proper token management helps protect user data and maintain the integrity of interactions within the system.
 
-### - Documentation Purpose:
+#### Documentation Purpose:
 - This guide provides comprehensive details on using access tokens, performing CRUD operations, and handling authentication and errors to securely interact with the API and maintain reliable system functionality.
 
 
