@@ -100,6 +100,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ## 1. Register a New User (Create)
 - Method: POST
+- Description: This endpoint allows new users to create an account in the system by providing a username and password. It stores user credentials securely and sets up the profile for future authenticated interactions.
 - Endpoint: (https://127.0.0.1/library2/public/user/register)
 - Request Body:
   
@@ -120,6 +121,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ## 2. Authenticate a User (Read)
 - Method: POST
+- Description: This endpoint verifies user credentials (username and password) and, upon successful verification, returns an access token. This token is essential for secure access and must be used for any subsequent API 
+  requests to ensure authenticated communication.
 - Endpoint: (https://127.0.0.1/library2/public/user/auth)
 - Request Body:
 
@@ -161,6 +164,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 3. Create an Author (Create)
 - Method: POST
+- Description: This endpoint enables users to add new author profiles to the library system. It requires the user to provide the author's details and an access token for authentication, ensuring only authorized users can 
+  create new entries.
 - Endpoint:(https://127.0.0.1/library2/public/authors)
 - Request Body:
 
@@ -181,6 +186,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 4. Get All Authors (Read)
 - Method: GET
+- Description: This endpoint fetches a complete list of authors stored in the library database. It requires authentication to protect the integrity of the data and ensure only authorized users can access this information.
 - Endpoint: (https://127.0.0.1/library2/public/authors/get)
 - Request Body:
 
@@ -207,6 +213,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ## 5. Update an Author (Update)
 - Method: PUT
+- Description: This endpoint allows users to modify the details of an existing author profile. Users must provide the updated information, the author’s ID, and an access token, ensuring that only authorized updates are   
+  permitted.
 - Endpoint: (https://127.0.0.1/library2/public/authors/update/2)
 - Request Body:
 
@@ -226,6 +234,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ``` 
 ## 6. Delete an Author (Delete)
 - Method: DELETE
+- Description: This endpoint enables users to remove an author profile from the system. The user must provide the author’s ID and an authentication token to confirm the deletion, preventing unauthorized removals.
 - Endpoint:(https://127.0.0.1/library2/public/authors/delete/3)
 - Request Body:
 
@@ -244,6 +253,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 7. Create A Book (Create)
 - Method: POST
+- Description: This endpoint allows users to add new book entries to the system by providing the book’s title and linking it to an existing author. Authentication is required to ensure only authorized users can create 
+  new book records.
 - Endpoint: (https://127.0.0.1/library2/public/books)
 - Request Body:
 
@@ -265,6 +276,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 8. Get All Books (Read)
 - Method: GET
+- Description: This endpoint retrieves a comprehensive list of all books available in the system. It requires an authentication token, ensuring that only authorized users can access the database.
 - Endpoint:(https://127.0.0.1/library2/public/books/get)
 - Request Body:
 
@@ -293,6 +305,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ## 9.Update A Book (Update)
 - Method: PUT
+- Description: This endpoint lets users modify the details of an existing book record, such as its title or associated author. The request must include the book's ID, updated details, and an access token for secure 
+  authorization.
 - Endpoint: (https://127.0.0.1/library2/public/books/update/5)
 - Request Body:
 
@@ -313,6 +327,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 10. Delete A Book (Delete)
 - Method: DELETE
+- Description: This endpoint allows users to delete a book entry from the system. It requires the book’s ID and a valid access token to ensure that only authorized users can perform deletions.
 - Endpoint:(https://127.0.0.1/library2/public/books/delete/3)
 - Request Body:
 
@@ -331,6 +346,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 11. Create Book-Authors Relations (Create)
 - Method: POST
+- Description: This endpoint enables users to create a relationship between a book and an author, linking them in the database. An access token is needed for authentication, ensuring only authorized users can establish 
+  these relationships.
 - Endpoint: (https://127.0.0.1/library2/public/books_authors)
 - Request Body:
 
@@ -351,6 +368,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 12. Get All Book Relations (Read)
 - Method: GET
+- Description: This endpoint retrieves all existing relationships between books and authors from the database. Authentication is required to access this information, maintaining the security and integrity of data.
 - Endpoint: (https://127.0.0.1/library2/public/books_authors/get)
 - Request Body:
 
@@ -378,6 +396,8 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```
 ## 13. Delete Book-Author Relations (Delete)
 - Method: DELETE
+- Description: This endpoint allows users to remove a specific relationship between a book and an author. The request requires an access token and the relevant IDs, ensuring that only authorized users can manage these 
+  associations.
 - Endpoint: (https://127.0.0.1/library2/public/books_authors/delete/1)
 - Request Body:
 
