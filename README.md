@@ -12,7 +12,7 @@ Access tokens are essential for secure authentication and authorization in web a
 
 CRUD represents the fundamental operations required for persistent storage in any application involving data. Here's what each component of CRUD entails and how it applies to the User and Author Management System API:
 
-### Create
+## Create
 - Purpose: The Create operation is used to add new data or resources to the system. This could involve registering a new user, creating an author profile, adding a new book, or establishing a relationship between a book and an author.
 - Example Endpoints:
   - POST /api/register – Registering a new user.
@@ -21,29 +21,36 @@ CRUD represents the fundamental operations required for persistent storage in an
   - POST /api/book-author-relations – Creating a book-author relationship.
 - Typical Response: Returns a success message and the ID of the created resource.
   
-### Read
-- Purpose: The Read operation retrieves data from the system. This allows users to view existing information, such as user details, a list of all authors, books, or existing book-author relationships.
+## Read
+
+### Purpose: The Read operation retrieves data from the system. This allows users to view existing information, such as user details, a list of all authors, books, or existing book-author relationships.
 - Example Endpoints:
+  
   - POST /api/authenticate – Authenticating a user (validates credentials and retrieves an authentication token).
   - GET /api/authors – Fetching a list of authors.
   - GET /api/books – Viewing a list of books.
   - GET /api/book-author-relations – Listing all book-author relationships.
-- Typical Response: Provides a JSON array or object representing the requested data.
+
+### Typical Response: Provides a JSON array or object representing the requested data.
   
-### Update
-- Purpose: The Update operation modifies existing data or resources in the system. This can involve updating user information, changing an author’s name, or editing book details.
+## Update
+### Purpose: The Update operation modifies existing data or resources in the system. This can involve updating user information, changing an author’s name, or editing book details.
 - Example Endpoints:
+
   - PUT /api/authors/{author_id} – Updating an author's information.
   - PUT /api/books/{book_id} – Modifying book details.
-- Typical Response: Confirms that the resource was successfully updated with a message.
   
-### Delete
-- Purpose: The Delete operation removes data or resources from the system. It is used for actions like deleting user accounts, removing author profiles, books, or breaking book-author relationships.
+### Typical Response: Confirms that the resource was successfully updated with a message.
+  
+## Delete
+### Purpose: The Delete operation removes data or resources from the system. It is used for actions like deleting user accounts, removing author profiles, books, or breaking book-author relationships.
 - Example Endpoints:
+
   - DELETE /api/authors/{author_id} – Deleting an author profile.
   - DELETE /api/books/{book_id} – Removing a book from the system.
   - DELETE /api/book-author-relations/{relation_id} – Deleting a book-author relationship.
-- Typical Response: A confirmation message indicating successful deletion of the specified resource.
+  
+### Typical Response: A confirmation message indicating successful deletion of the specified resource.
 
 ## Endpoints
 
@@ -82,10 +89,10 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ```json
 {
-  "status": "fail",
-  "data": {
-  "title": "Authentication Failed"
-  }
+    "status": "fail",
+    "data": {
+    "title": "Authentication Failed"
+    }
 }
 ```
 - Method: POST
