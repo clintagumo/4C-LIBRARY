@@ -16,8 +16,8 @@ Each section below outlines the structure of the JSON request payloads for diffe
 
 #### Authentication:
 - Supports various authentication methods such as :
-   ##### 1. API Keys: *Simple token-based method for access.*
-   ##### 2. OAuth: *More secure, token-based authentication for resource access.*
+   ##### 1. API Keys:   *Simple token-based method for access.*
+   ##### 2. OAuth:      *More secure, token-based authentication for resource access.*
    ##### 3. Basic Auth: *Username and password-based authentication.*
 
 #### Error Handling:
