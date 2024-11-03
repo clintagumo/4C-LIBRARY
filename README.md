@@ -53,11 +53,12 @@ CRUD represents the fundamental operations required for persistent storage in an
   
 - Request Body:
 
+‘’’ bash
 {
-  "username": "clint",
-  "password": "password"
+“username”: “clintr”,
+“password”: “password”
 }
-
+‘’’
 - Response:
 {
   "status": "success",
