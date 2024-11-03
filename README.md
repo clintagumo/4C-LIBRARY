@@ -54,8 +54,8 @@ CRUD represents the fundamental operations required for persistent storage in an
   
 ```json
 {
-"username": "clint",
-"password": "password"
+  "username": "clint",
+  "password": "password"
 }
 ```
 - Response:
@@ -72,33 +72,40 @@ CRUD represents the fundamental operations required for persistent storage in an
 - Endpoint: (https://127.0.0.1/library2/public/user/auth)
 - Request Body:
 
+```json
 {
-json
     "username": "clint",
     "password": "password123"
 }
-
+```
 - Response:
+
+```json
 {
   "status": "fail",
   "data": {
-    "title": "Authentication Failed"
+  "title": "Authentication Failed"
   }
 }
-
+```
 - Method: POST
 - Endpoint: (https://127.0.0.1/library2/public/user/auth)
 - Request Body:
+
+```json
 {
     "username": "clint",
     "password": "password123"
 }
+```
 - Response:
+```json
 {
   "status": "success",
   "Access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY2NjYsImV4cCI6MTczMDI1ODY2NiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.9o830kVZ8iSxAYCgxDu_G7D_K5IXaBlKjBEvRR90mi8"
   "data": null
 }
+```
 ## 3. Create an Author (Create)
 - Method: POST
 - Endpoint:(https://127.0.0.1/library2/public/authors)
