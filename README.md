@@ -50,19 +50,22 @@ CRUD represents the fundamental operations required for persistent storage in an
 ## 1. Register a New User (Create)
 - Method: POST
 - Endpoint: (https://127.0.0.1/library2/public/user/register)
-  
 - Request Body:
-‘’’ bash
+  
+```json
 {
-“username”: “clint”,
-“password”: “password”
+"username": "clint",
+"password": "password"
 }
-‘’’
+```
 - Response:
+
+```json
 {
   "status": "success",
   "data": null
 }
+```
 
 ## 2. Authenticate a User (Read)
 - Method: POST
