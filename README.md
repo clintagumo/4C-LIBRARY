@@ -15,16 +15,15 @@ Each section below outlines the structure of the JSON request payloads for diffe
 - Monitor and manage library user activities.
 
 ### Authentication:
-- Supports various authentication methods such as:
-  
-### API Keys:
--   Simple token-based method for access.
+- Supports various authentication methods such as :
+##### API Keys:
+-      Simple token-based method for access.
 ### OAuth: 
--   More secure, token-based authentication for resource access.
+-      More secure, token-based authentication for resource access.
 ### Basic Auth:
--   Username and password-based authentication.
+-      Username and password-based authentication.
 ### Error Handling:
-- Detailed error codes and structured response formats are provided for common error scenarios to assist in troubleshooting and improving user experience.
+-      Detailed error codes and structured response formats are provided for common error scenarios to assist in troubleshooting and improving user experience.
 
 ### - Access Tokens:
 - Essential for secure authentication and authorization.
