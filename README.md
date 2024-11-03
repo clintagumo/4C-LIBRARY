@@ -7,7 +7,7 @@ Each section below outlines the structure of the JSON request payloads for diffe
 ## Introduction to the API Library 
 
 #### Purpose: 
--   This API Library is designed specifically for library administrators, allowing efficient management of books and user monitoring.
+-   The purpose of this API Library is to simplify and streamline the management tasks of library administrators by providing a centralized system for managing books and monitoring users. It enables admins to efficiently     add, update, and delete book records, as well as track user activities and lending history. By automating routine tasks, the API reduces manual effort, ensures data consistency, and enhances the library’s operational     efficiency. With robust authentication and error-handling mechanisms, it secures all operations, preventing unauthorized access and protecting data integrity. This makes the API an essential tool for modern library       management.
   
 #### Core Functions:
 
@@ -16,11 +16,11 @@ Each section below outlines the structure of the JSON request payloads for diffe
 
 #### Authentication:
 - Supports various authentication methods such as :
-##### API Keys:
+   ##### 1. API Keys:
         - Simple token-based method for access.
-##### OAuth: 
+   ##### 2. OAuth: 
         - More secure, token-based authentication for resource access.
-##### Basic Auth:
+   ##### 3. Basic Auth:
         - Username and password-based authentication.
 
 #### Error Handling:
