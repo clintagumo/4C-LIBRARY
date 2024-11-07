@@ -139,7 +139,7 @@ CRUD represents the fundamental operations required for persistent storage in an
   "status": "success",
   "access_token": 
   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4N
-   ywidXNlcmlkIjoiMTIyIn0.2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
+      ywidXNlcmlkIjoiMTIyIn0.2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
   "data": null
 }
 ```
