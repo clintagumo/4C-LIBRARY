@@ -160,7 +160,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 {
   "status": "fail",
   "data": {
-    "title": "Authentication Failed"
+  "title": "Authentication Failed"
   }
 }
 ```
@@ -374,7 +374,8 @@ CRUD represents the fundamental operations required for persistent storage in an
     "title": "The Vampire",
     "author_id": 1,
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": 
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.sJd4JGMi18Y0qq1IHr9ujrkKI8E"
 }
 ```
 - **Response**:
