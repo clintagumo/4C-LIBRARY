@@ -137,8 +137,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```json
 {
   "status": "success",
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4N
-                   ywidXNlcmlkIjoiMTIyIn0.2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
+"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4NywidXNlcmlkIjoiMTIyIn0.2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
   "data": null
 }
 ```
@@ -357,7 +356,7 @@ CRUD represents the fundamental operations required for persistent storage in an
       "name": "Author I"
     },
   ],
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzg1MjEsImV4cCI6MTczMDk4MjEyMSwidXNlcmlkIjoxMTB9.
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzg1MjEsImV4cCI6MTczMDk4MjEyMSwidXNlcmlkIjoxMTB9.-
    xQHfINps8ZWzvalmKKsSWCyJpB71GoUBT3B0Bf5KfCc"
 }
 ```
