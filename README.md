@@ -137,7 +137,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```json
 {
   "status": "success",
-"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4NywidXNlcmlkIjoiMTIyIn0.2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
+  "access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mz2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
   "data": null
 }
 ```
@@ -176,8 +176,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 {
     "name": "cagumo",
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYxMzgsImV4cCI6MTczMDk3OTczOCwidXNlcmlkIjoiMTIyIn0.
-     k5GCuWhTeGqi3mu2vQwNuSmZw5WWuvFuOTJNla8gBNQ  "
+    "token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjETczMDk3OTczOCwidXNlcmlkIjoiMTI0.k5GCuWhTeGqi3mu2vQwNuSmZw5WWuvFuOTJNla8gBNQ  "
 }
 ```
 - **Response**:
@@ -185,8 +184,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 {
   "status": "success",
   "data": null,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzcxNTAsImV4cCI6MTczMDk4MDc1MCwidXNlcmlkIjoxMTB9.
-   UnP8Bkhupcqi4Ur0Fz-Kbd4cjQQG6lWowmMkwSio-44"
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmF20iLCJpYXQiOjE3MzA5NzcxNTAsImV4cCI6MTczMDk4MDc1MCwidXNlcmlkIjoxMTB9.UnP8Bkhupcqi4Ur0Fz-Kbd4cjQQG6lWowmMkwSio-44"
 }                                                                                                                                
 ```
 ## 4. Get All Authors (Read)
@@ -200,8 +198,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYyNTEsImV4cCI6MTczMDk3OTg1MSwidXNlcmlkIjoiMTIyIn0.o7puTINfaR2qhwemqrk4qgdM1Ld
-     PuDtBb4WIexSB2J8"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJJpYXQiOjE3MzA5NzYyNTEsImV4cCI6MTczMDk3OTg1MSwidXNlcmlkIjoiMTIyIn0.o7puTINfaR2qhwemqrk4qgdM1LdPuDtBb4WIexSB2J8"
 }
 
 ``` 
@@ -240,8 +237,7 @@ CRUD represents the fundamental operations required for persistent storage in an
       "name": "cagumo"
     }
   ],
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzcyNjcsImV4cCI6MTczMDk4MDg2NywidXNlcmlkIjoxMTB9.K- 
-   S2K_hLvH8lGJw_YrMigRHUe3UdeoUROpV2fLxruSg"
+      "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.LCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzcyNjcsImV4cCI6MTczMDk4MDg2NywidXNlcmlkIjoxMTB9.K- S2K_hLvH8lGJw_YrMigRHUe3UdeoUROpV2fLxruSg"
 }
 ``` 
 
@@ -256,8 +252,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 {
     "name": "Clint",
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4NywidXNlcmlkIjoiMTIyIn0-
-     2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcjb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4NywidXNlcmlkIjoiMTIyIn0-2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag"
 }
 ``` 
 - **Response**:
@@ -266,8 +261,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 {
   "status": "success",
   "data": null,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzY0MTcsImV4cCI6MTczMDk4MDAxNywidXNlcmlkIjoxMTB9-
-   bbvPPAoCnHOmpMopvUKMi_Jq7SFLn8ssOGD6k91KyE0"
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzY0MTcsImV4cCI6MTczMDk4MDAxNywidXNlcmlkIjoxMTB9-bvUKMi_Jq7SFLn8ssOGD6k91KyE0"
 }
 ```
 ## Updated Author(7)
@@ -300,8 +294,7 @@ CRUD represents the fundamental operations required for persistent storage in an
       "name": "cagumo"
     }
   ],
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzc5MTYsImV4cCI6MTczMDk4MTUxNiwidXNlcmlkIjoxMTB9-
-   Qqb6u00Q4px8JAV1MncYt3IXoXecz9sPoGqK-bW2HDQ"
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzc5MTYsImV4cCI6MTczMDk4MTUxNiwidXNlcmlkIjoxMTB9-Qqb6u00Q4px8JAV1MncYt3IXoXecz9sPoGqK-bW2HDQ"
 }
 ```
 
@@ -315,8 +308,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzgyOTQsImV4cCI6MTczMDk4MTg5NCwidXNlcmlkIjoiMTIyIn0-
-    5zYlzUebX9719zb4E6X- L6eRDPvzfSJHD4acke00aSA"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzgyOTQsImV4cCI6MTczMDk4MTg5NCwidXNlcmlkIjoiMTIy- L6eRDPvzfSJHD4acke00aSA"
 }
 ``` 
 - **Response**:
@@ -325,8 +317,7 @@ CRUD represents the fundamental operations required for persistent storage in an
 {
   "status": "success",
   "data": null,
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzgzMzAsImV4cCI6MTczMDk4MTkzMCwidXNlcmlkIjoxMTB9-
-   RT_a9J0a8wW1LJV9NViF4zazENQDZYPSJywRIgggReI"
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MimciLCJhdWQiOiJicmFyeS5jb20iLCJpYXQiOjE3MzA5NzgzMzAsImV4cCI6MTczMDk4MTkzMCwidXNlcmlkIjoxMTB9-RT_a9J0a8wW1LJV9NViF4zazENQDZYPSJywRIgggReI"
 }
 ```
 ## Deleted An Author (# 7)
@@ -356,8 +347,7 @@ CRUD represents the fundamental operations required for persistent storage in an
       "name": "Author I"
     },
   ],
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzg1MjEsImV4cCI6MTczMDk4MjEyMSwidXNlcmlkIjoxMTB9-
-   xQHfINps8ZWzvalmKKsSWCyJpB71GoUBT3B0Bf5KfCc"
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbvbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzg1MjEsImV4cCI6MTczMDk4MjEyMSwidXNlcmlkIjoxMTB9-xQHfINps8ZWzvalmKKsSWCyJpB71GoUBT3B0Bf5KfCc"
 }
 ```
 
