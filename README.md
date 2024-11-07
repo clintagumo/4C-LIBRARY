@@ -106,7 +106,7 @@ CRUD represents the fundamental operations required for persistent storage in an
   
 ```json
 {
-  "username": "clint",
+  "username": "clintagumo",
   "password": "password"
 }
 ```
@@ -128,20 +128,24 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ```json
 {
-    "username": "clint",
-    "password": "password123"
+  "username": "clintagumo",
+  "password": "password"
 }
 ```
 - **Response**:
 
 ```json
 {
-    "status": "fail",
-    "data": {
-    "title": "Authentication Failed"
-    }
+  "status": "success",
+  "access_token": 
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4N
+   ywidXNlcmlkIjoiMTIyIn0.2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag",
+  "data": null
 }
 ```
+
+## Error(Authentication Failed)
+
 - **Method**: POST
 - **Endpoint**: (https://127.0.0.1/library2/public/user/auth)
 - **Request Body**:
@@ -156,10 +160,10 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ```json
 {
-    "status": "success",
-    "Access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjY2NjYsImV4cCI6MTczMDI1ODY2NiwiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.
-     9o830kVZ8iSxAYCgxDu_G7D_K5IXaBlKjBEvRR90mi8"
-    "data": null
+  "status": "fail",
+  "data": {
+    "title": "Authentication Failed"
+  }
 }
 ```
 ## 3. Create an Author (Create)
@@ -172,18 +176,20 @@ CRUD represents the fundamental operations required for persistent storage in an
 
 ```json
 {
-    "name": "clintcute",
+    "name": "cagumo",
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MT
-     cyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYxMzgsImV4cCI6MTczMDk3OTczOCwidXNlcmlkIjoiMTIyIn0.
+    k5GCuWhTeGqi3mu2vQwNuSmZw5WWuvFuOTJNla8gBNQ  "
 }
 ```
 - **Response**:
 ```json
 {
-    "message": "Author created successfully.",
-    "author_id": 1
-}                                                                                                                                   
+  "status": "success",
+  "data": null,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzcxNTAsImV4cCI6MTczMDk4MDc1MCwidXNlcmlkIjoxMTB9.
+  UnP8Bkhupcqi4Ur0Fz-Kbd4cjQQG6lWowmMkwSio-44"
+}                                                                                                                                
 ```
 ## 4. Get All Authors (Read)
 - **Method**: GET
@@ -196,45 +202,111 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYyNTEsImV4cCI6MTczMDk3OTg1MSwidXNlcmlkIjoiMTIyIn0.o7puTINfaR2qhwemqrk4qgdM1Ld
+    PuDtBb4WIexSB2J8"
 }
+
 ``` 
 - **Response**:
 
 ```json
-[
-  {
-    "author_id": 1,
-    "name": "Clint Agumo"
-  },
-  {
-    "author_id": 2,
-    "name": "Cha Nudas"
-  }
-]
+{
+  "status": "success",
+  "data": [
+    {
+      "authorid": "4",
+      "name": "cha"
+    },
+    {
+      "authorid": "5",
+      "name": "Author E"
+    },
+    {
+      "authorid": "6",
+      "name": "Author F"
+    },
+    {
+      "authorid": "7",
+      "name": "Author G"
+    },
+    {
+      "authorid": "8",
+      "name": "Author H"
+    },
+    {
+      "authorid": "109",
+      "name": "cagumo"
+    },
+    {
+      "authorid": "110",
+      "name": "cagumo"
+    }
+  ],
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzcyNjcsImV4cCI6MTczMDk4MDg2NywidXNlcmlkIjoxMTB9.K- 
+  S2K_hLvH8lGJw_YrMigRHUe3UdeoUROpV2fLxruSg"
+}
 ``` 
 
 ## 5. Update an Author (Update)
 - **Method**: PUT
 - **Description**: This endpoint allows users to modify the details of an existing author profile. Users must provide the updated information, the author’s ID, and an access token, ensuring that only authorized updates 
   are permitted.
-- **Endpoint**: (https://127.0.0.1/library2/public/authors/update/2)
+- **Endpoint**: (https://127.0.0.1/library2/public/authors/update/1)
 - **Request Body**:
 
 ```json
 {
-    "name": "Clint Cute",
+    "name": "Clint",
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzYzODcsImV4cCI6MTczMDk3OTk4NywidXNlcmlkIjoiMTIyIn0.
+    2DbSA0fkS2royUvBHYeO1Hmf1zvev4HT0hsoOQBgQag"
 }
 ``` 
 - **Response**:
 
 ```json
 {
-    "message": "Author updated successfully."
+  "status": "success",
+  "data": null,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzY0MTcsImV4cCI6MTczMDk4MDAxNywidXNlcmlkIjoxMTB9.
+  bbvPPAoCnHOmpMopvUKMi_Jq7SFLn8ssOGD6k91KyE0"
 }
-``` 
+```
+## Updated Author(7)
+
+- **Response**:
+```json
+{
+  "status": "success",
+  "data": [
+    {
+      "authorid": "4",
+      "name": "cha"
+    },
+    {
+      "authorid": "5",
+      "name": "Author E"
+    },
+    {
+      "authorid": "6",
+      "name": "Author F"
+    },
+    {
+      "authorid": "7",
+      "name": "Clintcutemo"
+    },
+    {
+
+    {
+      "authorid": "110",
+      "name": "cagumo"
+    }
+  ],
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzc5MTYsImV4cCI6MTczMDk4MTUxNiwidXNlcmlkIjoxMTB9.
+   Qqb6u00Q4px8JAV1MncYt3IXoXecz9sPoGqK-bW2HDQ"
+}
+```
+
 ## 6. Delete an Author (Delete)
 - **Method**: DELETE
 - **Description**: This endpoint enables users to remove an author profile from the system. The user must provide the author’s ID and an authentication token to confirm the deletion, preventing unauthorized removals.
@@ -245,16 +317,52 @@ CRUD represents the fundamental operations required for persistent storage in an
 ```json
 {
     "userid": 110,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3Mjc2NjcwMDMsImV4cCI6MTcyNzY3MDYwMywiZGF0YSI6eyJ1c2VyaWQiOjEwNn19.-SEGOTA6Smk_b8P-          sJd4JGMi18Y0qq1IHr9ujrkKI8E"
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzgyOTQsImV4cCI6MTczMDk4MTg5NCwidXNlcmlkIjoiMTIyIn0.
+    5zYlzUebX9719zb4E6X- L6eRDPvzfSJHD4acke00aSA"
 }
 ``` 
 - **Response**:
 
 ```json
 {
-    "message": "Author deleted successfully."
+  "status": "success",
+  "data": null,
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5NzgzMzAsImV4cCI6MTczMDk4MTkzMCwidXNlcmlkIjoxMTB9.
+  RT_a9J0a8wW1LJV9NViF4zazENQDZYPSJywRIgggReI"
 }
 ```
+## Deleted An Author (# 7)
+
+```json
+{
+  "status": "success",
+  "data": [
+    {
+      "authorid": "4",
+      "name": "cha"
+    },
+    {
+      "authorid": "5",
+      "name": "Author E"
+    },
+    {
+      "authorid": "6",
+      "name": "Author F"
+    },
+    {
+      "authorid": "8",
+      "name": "Author H"
+    },
+    {
+      "authorid": "9",
+      "name": "Author I"
+    },
+  ],
+  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbGlicmFyeS5vcmciLCJhdWQiOiJodHRwOi8vbGlicmFyeS5jb20iLCJpYXQiOjE3MzA5Nzg1MjEsImV4cCI6MTczMDk4MjEyMSwidXNlcmlkIjoxMTB9.
+  xQHfINps8ZWzvalmKKsSWCyJpB71GoUBT3B0Bf5KfCc"
+}
+```
+
 ## 7. Create A Book (Create)
 - **Method**: POST
 - **Description**: This endpoint allows users to add new book entries to the system by providing the book’s title and linking it to an existing author. Authentication is required to ensure only authorized users can 
